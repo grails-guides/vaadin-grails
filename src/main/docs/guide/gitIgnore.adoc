@@ -1,0 +1,20 @@
+Our last little bit of setup is to make sure we have our `.gitignore` setup to properly ignore
+files we don't want to push to our heroku repository. If you do not already have a `.gitignore`
+then from your top level project directory
+
+[source, bash]
+----
+$ touch .gitignore
+----
+
+Now add files to ignore
+
+[source, bash]
+.gitignore
+----
+include::{sourceDir}/.gitignore[indent=0,lines=1..11]
+----
+
+Please pay special attention here as we ignore the `.gradle` directory but we want to make
+sure we do not ignore our `gradle` directory as we need to make sure that gets committed
+with our application.

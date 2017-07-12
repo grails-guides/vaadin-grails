@@ -1,0 +1,41 @@
+Now there are a few things we need to update in order for our application to run on Heroku.
+
+[source, groovy]
+.build.gradle
+----
+include::{sourceDir}/build.gradle[indent=0,lines=9..14]
+----
+<1> In order to control which Spring Boot version we are using.
+
+Next we need to add a plugin specifically for handling dependency management.
+[source, groovy]
+.build.gradle
+----
+include::{sourceDir}/build.gradle[indent=0,lines=17..19]
+----
+
+Followed by actually applying the plugin
+[source, groovy]
+.build.gradle
+----
+include::{sourceDir}/build.gradle[indent=0,lines=24..24]
+----
+
+After which we update our dependencies.
+[source, groovy]
+.build.gradle
+----
+include::{sourceDir}/build.gradle[indent=0,lines=44..86]
+----
+<1> Switch this to provided as Heroku supplies this for us.
+<2> Add the webapp-runner which Heroku needs.
+<3> Heroku also requires that we add postgres so add that as well.
+
+Finally add the magic build glue that follows
+[source, groovy]
+.build.gradle
+----
+include::{sourceDir}/build.gradle[indent=0,lines=98..120]
+----
+
+The above is instructing Heroku's gradle on tasks to complete.

@@ -1,0 +1,8 @@
+include::{commondir}/common-requirements.adoc[]
+
+If you want to start from scratch, create a new Grails 3 app:
+
+[source,bash]
+----
+grails create-app grailsguideheroku
+----

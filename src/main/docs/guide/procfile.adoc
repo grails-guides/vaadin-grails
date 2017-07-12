@@ -1,0 +1,9 @@
+Next we need to add the Procfile. The Procfile is added in the root directory of
+your application and is used to explicitly declare what command should be used to start your
+application. In our case the command is the following.
+
+[source, bash]
+.Procfile
+----
+include::{sourceDir}/Procfile[indent=0,lines=1..1]
+----
