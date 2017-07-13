@@ -1,7 +1,0 @@
-To create your Heroku account, https://signup.heroku.com/dc[start here]
-(You can create a free trial for your organization).
-Follow the instructions to
-https://devcenter.heroku.com/articles/heroku-cli[download and setup the Heroku CLI].
-
-Look here for more https://devcenter.heroku.com/categories/command-line[details] on what
-https://devcenter.heroku.com/articles/heroku-cli-commands[commands] the Heroku CLI makes available to you.

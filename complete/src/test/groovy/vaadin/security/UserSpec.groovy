@@ -2,6 +2,7 @@ package vaadin.security
 
 import grails.test.mixin.TestFor
 import spock.lang.Specification
+import vaadin.User
 
 /**
  * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions

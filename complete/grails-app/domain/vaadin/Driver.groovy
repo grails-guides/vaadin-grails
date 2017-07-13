@@ -5,7 +5,6 @@ import grails.compiler.GrailsCompileStatic
 //import grails.plugin.springsecurity.annotation.Secured
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
-import vaadin.security.User
 
 @GrailsCompileStatic
 @EqualsAndHashCode(includes=['name'])

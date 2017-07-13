@@ -1,4 +1,4 @@
-package vaadin.security
+package vaadin
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
@@ -17,10 +17,6 @@ class User implements Serializable {
     boolean accountExpired
     boolean accountLocked
     boolean passwordExpired
-
-    Set<Role> getAuthorities() {
-        (UserRole.findAllByUser(this) as List<UserRole>)*.role as Set<Role>
-    }
 
     static constraints = {
         password nullable: false, blank: false, password: true
