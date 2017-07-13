@@ -6,14 +6,14 @@ To run the application first
 
 [source,bash]
 ----
-~ cd initial/
+$ cd initial/
 ----
 
 To launch the application, run the following command.
 
 [source,bash]
 ----
-~ ./gradlew bootRun
+$ ./gradlew bootRun
 ----
 
 If everything is good to go this will start up the Grails application,

@@ -8,10 +8,9 @@ runningTheApp:
   title: Running the Application
 writingTheApp:
   title: Writing the Application
-creatingTheDomain:
-  title: Creating the domain
-creatingTheServices:
-  title: Creating the service layer
+  creatingTheDomain: Creating the domain
+  creatingTestData: Bootstrap Data
+  creatingTheServices: Creating the service layer
 #setupHeroku:
 #  title: Setup Heroku Account and install Heroku CLI
 #  login: Login to Heroku from terminal

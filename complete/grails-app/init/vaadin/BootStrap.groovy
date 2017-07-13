@@ -4,7 +4,7 @@ class BootStrap {
 
     def init = { servletContext ->
         println "Loading database..."
-        final driver1 = new Driver(name: "Susan", username: "susan", password: "password1").save() //<1>
+        final driver1 = new Driver(name: "Susan", username: "susan", password: "password1").save()
         final driver2 = new Driver(name: "Pedro", username:  "pedro", password: "password2").save()
 
         final nissan = new Make(name: "Nissan").save()

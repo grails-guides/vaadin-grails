@@ -1,8 +1,6 @@
 package vaadin
 
 import grails.compiler.GrailsCompileStatic
-
-//import grails.plugin.springsecurity.annotation.Secured
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString
 
