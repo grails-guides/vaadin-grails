@@ -19,15 +19,15 @@ import com.vaadin.ui.VerticalLayout
 import com.vaadin.ui.themes.ValoTheme
 
 @SpringUI(path="/vaadinui")
-@Title("Vaadin Grails")
+@Title("Vaadin Grails") //<1>
 @Theme("vaadin-grails-theme")
-@SpringViewDisplay
-class VaadinGrailsUI extends UI implements ViewDisplay {
-    private Panel springViewDisplay
+@SpringViewDisplay //<2>
+class VaadinGrailsUI extends UI implements ViewDisplay { //<3>
+    private Panel springViewDisplay //<4>
 
     /** Where a line is matters, it can change the position of an element. */
     @Override
-    protected void init(VaadinRequest request) {
+    protected void init(VaadinRequest request) { //<5>
         final VerticalLayout root = new VerticalLayout()
         root.setSizeFull()
         setContent(root)
@@ -40,14 +40,14 @@ class VaadinGrailsUI extends UI implements ViewDisplay {
     }
 
 
-    private Label buildHeader() {
+    private Label buildHeader() { //<6>
         final Label mainTitle = new Label("Welcome to the Garage")
         mainTitle // return
     }
 
 
     @Override
-    void showView(final View view) {
+    void showView(final View view) { //<7>
         springViewDisplay.setContent((Component) view)
     }
 }

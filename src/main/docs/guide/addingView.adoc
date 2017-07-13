@@ -1,0 +1,54 @@
+Now to add the view which is the bulk of our Vaadin code. Create a new file located in
+`grails-app/vaadin/vaadin` called `GarageView.groovy`.
+
+Next make the necessary updates.
+
+[source,groovy]
+./grails-app/vaadin/vaadin/GarageView.groovy
+----
+include::{sourceDir}/grails-app/vaadin/vaadin/GarageView.groovy[]
+----
+
+<1> Add `@SpringView` annotation and set the name so that your view can be found.
+<2> The view should extend the layout style that is desired
+<3> Set the actual view name
+<4> Tells the view `init()` to execute after the main UI `init()`
+
+WARNING: Grails auto dependency injection is not able to detect services in Vaadin,
+thus we require using the more traditional Spring annotation @Autowired in order
+to get dependency injection to work properly.
+
+Our view is trying to mimic the layout of much of modern web design by making use of "Rows"
+in our case we have 3 rows, a header, data collection, and data display (grid). As we develop
+a pattern start to emerge in Vaadin for views.
+
+- Create layout
+- Create UI component
+- Add UI component to layout
+- Add layout to view
+
+When adding layout to the view you can just use `addComponent()` as it is aware that it is
+adding to itself, unlike the top level UI where `root.addComponent()` is required.
+
+To keep a clean view file continue building each UI component as its own private method. An
+important note is if you are familiar with groovy you are aware we can return like the following...
+
+[source,groovy]
+----
+Label someMethod() {
+    new Label("Im a label")  // return
+}
+----
+
+But in your Vaadin files this will fail claiming that you are returning an un-initialized variable.
+Its easy enough to work around but requires some minor extra coding. ie.
+
+[source,groovy]
+./grails-app/vaadin/vaadin/GarageView.groovy
+----
+include::{sourceDir}/grails-app/vaadin/vaadin/GarageView.groovy[indent=0, lines="81..86"]
+----
+
+Once we have built our UI components now we need to be able to interact with them. To do this
+we add listeners to components making use of groovy closures to specify what whould happen
+when an event occurs.

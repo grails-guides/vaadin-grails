@@ -11,13 +11,16 @@ import com.vaadin.ui.Label
 import com.vaadin.ui.TextField
 import com.vaadin.ui.VerticalLayout
 import org.springframework.beans.factory.annotation.Autowired
-
 import javax.annotation.PostConstruct
 
-@SpringView(name = GarageView.VIEW_NAME)
-class GarageView extends VerticalLayout implements View {
-    public static final String VIEW_NAME = ""
+@SpringView(name = GarageView.VIEW_NAME) //<1>
+class GarageView extends VerticalLayout implements View { //<2>
+    public static final String VIEW_NAME = "" //<3>
 
+    /** Service Declarations: ------------------------------------------------------------------------------------------
+      * Grails auto dependency injection is not able to detect services in Vaadin, thus we require using the more
+      * traditional Spring annotation @Autowired in order to get dependency injection to work properly.
+      * ------------------------------------------------------------------------------------------------------------- */
     @Autowired private DriverService driverService
     @Autowired private MakeService makeService
     @Autowired private ModelService modelService
@@ -25,7 +28,7 @@ class GarageView extends VerticalLayout implements View {
 
     private Vehicle vehicle = new Vehicle()
 
-    @PostConstruct
+    @PostConstruct //<4>
     void init() {
         /** Display Row One: (Add panel title) ---------------------------------------------------------------------- */
         final HorizontalLayout titleRow = new HorizontalLayout()
@@ -74,6 +77,7 @@ class GarageView extends VerticalLayout implements View {
         // This view is constructed in the init() method()
     }
 
+    /** Private UI component builders ------------------------------------------------------------------------------- */
     private TextField buildNewVehicleName() {
         final TextField vehicleName = new TextField()
         vehicleName.setPlaceholder("Enter a name...")
@@ -154,6 +158,6 @@ class GarageView extends VerticalLayout implements View {
 
     private submit() {
         vehicleService.save(this.vehicle)
-        getUI().getNavigator().navigateTo(VIEW_NAME) // not sure this is best practice but it refreshes the grid data
+        getUI().getNavigator().navigateTo(VIEW_NAME)
     }
 }
