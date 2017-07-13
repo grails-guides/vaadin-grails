@@ -9,6 +9,7 @@ import groovy.transform.ToString
 @ToString(includes=['name'], includeNames=true, includePackage=false)
 class Driver extends User {
 
+    /** Properties: */
     String name
 
     static hasMany = [ vehicles: Vehicle ]

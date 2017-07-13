@@ -9,6 +9,7 @@ import groovy.transform.ToString
 @ToString(includes=['name'], includeNames=true, includePackage=false)
 class Make {
 
+    /** Properties: */
     String name
 
     static constraints = {
