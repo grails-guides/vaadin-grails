@@ -6,9 +6,9 @@ import grails.converters.JSON
 @GrailsCompileStatic
 class GarageController {
 
-    VehicleService vehicleService
+    VehicleService vehicleService //<1>
 
-    def index() {
+    def index() { //<2>
         final List<Vehicle> vehicleList = vehicleService.listAll()
 
         render vehicleList as JSON

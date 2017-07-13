@@ -1,3 +1,0 @@
-NOTE: The `initial` project is based on the concept of the completed project from the
-http://guides.grails.org/building-a-react-app/guide/index.html[Building a React App Guide].
-Please refer to that guide for an alternate version of this app.

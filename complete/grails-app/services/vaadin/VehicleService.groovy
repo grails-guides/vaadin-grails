@@ -13,7 +13,6 @@ class VehicleService {
     List<Vehicle> listAll() {
         // Vaadin requires it be declared to a variable first or it breaks
         final List<Vehicle> vehicleList = Vehicle.list()
-        //println vehicleList
         vehicleList // return
     }
 }

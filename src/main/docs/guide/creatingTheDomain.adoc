@@ -9,7 +9,7 @@ Lets start by creating our domain model for the application.
   $ grails create-domain-class vaadin.Vehicle
 ----
 
-Now let’s edit our domain class under grails-app/domain/vaadin/.
+Now let’s edit our domain classes under grails-app/domain/vaadin/.
 We’ll add some properties and the three following annotations.
 
 - @GrailsCompileStatic - increases application performance

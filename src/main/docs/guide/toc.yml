@@ -11,6 +11,7 @@ writingTheApp:
   creatingTheDomain: Creating the domain
   creatingTestData: Bootstrap Data
   creatingTheServices: Creating the service layer
+  creatingTheControllers: Creating a controller
 #setupHeroku:
 #  title: Setup Heroku Account and install Heroku CLI
 #  login: Login to Heroku from terminal
