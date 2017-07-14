@@ -52,10 +52,10 @@ class GarageView extends VerticalLayout implements View { //<2>
         final Button submitBtn = this.buildSubmitButton()
 
         // Add listeners to capture data change
-        vehicleName.addValueChangeListener { event -> updateVehicle("NAME", event.value) }
-        vehicleMake.addSelectionListener   { event -> updateVehicle("MAKE", event.getSelectedItem().get()) }
-        vehicleModel.addSelectionListener  { event -> updateVehicle("MODEL", event.getSelectedItem().get()) }
-        vehicleDriver.addSelectionListener { event -> updateVehicle("DRIVER", event.getSelectedItem().get()) }
+        vehicleName.addValueChangeListener { event -> this.updateVehicle("NAME", event.value) }
+        vehicleMake.addSelectionListener   { event -> this.updateVehicle("MAKE", event.getSelectedItem().get()) }
+        vehicleModel.addSelectionListener  { event -> this.updateVehicle("MODEL", event.getSelectedItem().get()) }
+        vehicleDriver.addSelectionListener { event -> this.updateVehicle("DRIVER", event.getSelectedItem().get()) }
         submitBtn.addClickListener         { event -> this.submit()}
 
         // Add data constructs to row

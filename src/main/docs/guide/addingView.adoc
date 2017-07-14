@@ -50,5 +50,25 @@ include::{sourceDir}/grails-app/vaadin/vaadin/GarageView.groovy[indent=0, lines=
 ----
 
 Once we have built our UI components now we need to be able to interact with them. To do this
-we add listeners to components making use of groovy closures to specify what whould happen
-when an event occurs.
+we add listeners to our components making use of groovy closures to specify what would happen
+when an event occurs. In our case we are `updateVehicle()` which we then `submit()`
+
+[source,groovy]
+./grails-app/vaadin/vaadin/GarageView.groovy
+----
+include::{sourceDir}/grails-app/vaadin/vaadin/GarageView.groovy[indent=0, lines="54..59"]
+----
+
+Using the listeners we build the vehicle object which is then submitted when the button is clicked.
+The last line of our submit method reloads our view to refresh the newly updated data.
+
+[source,groovy]
+./grails-app/vaadin/vaadin/GarageView.groovy
+----
+include::{sourceDir}/grails-app/vaadin/vaadin/GarageView.groovy[indent=0, lines="159..162"]
+----
+
+Now that everything is in place return to <<runningTheApp>> to run your app. If everything is as
+it should be you will see the following.
+
+image::runningGarageApp.png[]

@@ -14,5 +14,7 @@ writingTheApp:
   creatingTheControllers: Creating a controller
   addingToVaadin: Vaadin
   addingView: Adding your view
+nextSteps:
+  title: Next Steps
 helpWithGrails:
   title: Do you need help with Grails?
