@@ -11,6 +11,9 @@ components or other pages later on. With this in mind we are going to make it a 
 flexible using views. Using views is also beneficial in helping keep our Vaadin frontend
 well organized.
 
+NOTE: For more information on views and navigation with Vaadin look
+https://vaadin.github.io/spring-tutorial/#_views_and_navigation_with_vaadin_spring[here].
+
 [source,groovy]
 ./grails-app/vaadin/vaadin/VaadinGrailsUI.groovy
 ----

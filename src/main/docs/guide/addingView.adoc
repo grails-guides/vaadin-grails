@@ -30,8 +30,8 @@ a pattern start to emerge in Vaadin for views.
 When adding layout to the view you can just use `addComponent()` as it is aware that it is
 adding to itself, unlike the top level UI where `root.addComponent()` is required.
 
-To keep a clean view file continue building each UI component as its own private method. An
-important note is if you are familiar with groovy you are aware we can return like the following...
+To keep a clean file continue building each UI component as its own private method. An
+important note if you are familiar with groovy is we are able to return like the following...
 
 [source,groovy]
 ----
