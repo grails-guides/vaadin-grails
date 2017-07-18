@@ -82,7 +82,7 @@ class GarageView extends VerticalLayout implements View { //<2>
         final TextField vehicleName = new TextField()
         vehicleName.setPlaceholder("Enter a name...")
 
-        vehicleName // return
+        vehicleName
     }
 
     private ComboBox<Make> buildMakeComponent() {
@@ -94,7 +94,7 @@ class GarageView extends VerticalLayout implements View { //<2>
         select.setItemCaptionGenerator{ item -> item.name }
         select.setItems(makes)
 
-        select // return
+        select
     }
 
     private ComboBox<Model> buildModelComponent() {
@@ -106,7 +106,7 @@ class GarageView extends VerticalLayout implements View { //<2>
         select.setItemCaptionGenerator{ item -> item.name }
         select.setItems(models)
 
-        select // return
+        select
     }
 
     private ComboBox<Driver> buildDriverComponent() {
@@ -118,7 +118,7 @@ class GarageView extends VerticalLayout implements View { //<2>
         select.setItemCaptionGenerator{ item -> item.name }
         select.setItems(drivers)
 
-        select // return
+        select
     }
 
     private Grid buildVehicleComponent() {
@@ -132,14 +132,14 @@ class GarageView extends VerticalLayout implements View { //<2>
         grid.addColumn{ item -> item.model.name }.setCaption("Model")
         grid.addColumn{ item -> item.driver.name }.setCaption("Name")
 
-        grid // return
+        grid
     }
 
     private Button buildSubmitButton() {
         final Button submitBtn = new Button("Add to Garage")
         submitBtn.setStyleName("friendly")
 
-        submitBtn // return
+        submitBtn
     }
 
     private updateVehicle(final String eventType, final eventValue) {
