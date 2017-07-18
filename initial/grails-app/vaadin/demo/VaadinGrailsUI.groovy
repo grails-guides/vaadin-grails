@@ -1,4 +1,4 @@
-package vaadin
+package demo
 
 import com.vaadin.server.VaadinRequest
 import com.vaadin.annotations.Theme
@@ -11,7 +11,7 @@ import com.vaadin.ui.UI
 
 @SpringUI(path="/vaadinui")
 @Theme("vaadin-theme")
-public class VaadinGrailsUI extends UI{
+public class VaadinGrailsUI extends UI {
     @Override
     protected void init(VaadinRequest request) {
         HorizontalLayout root = new HorizontalLayout()
