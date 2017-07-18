@@ -1,4 +1,4 @@
-package vaadin
+package demo
 
 class BootStrap {
 

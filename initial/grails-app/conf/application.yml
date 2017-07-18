@@ -2,7 +2,7 @@
 grails:
     profile: me.przepiora.vaadin-grails:web-vaadin8:0.2
     codegen:
-        defaultPackage: vaadin
+        defaultPackage: demo
     spring:
         transactionManagement:
             proxies: false
