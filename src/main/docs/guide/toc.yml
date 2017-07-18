@@ -2,8 +2,9 @@ gettingStarted:
   title: Getting Started
   requirements: What you will need
   howto: How to complete the guide
+  profile: Vaadin 8 Grails 3 Profile 
 aboutVaadin:
-  title: About Vaadin with Grails
+  title: About Vaadin
 runningTheApp:
   title: Running the Application
 writingTheApp:
@@ -18,5 +19,6 @@ themingTheApp:
   title: Theming the Application
 nextSteps:
   title: Next Steps
+  knownIssues: Known Issues
 helpWithGrails:
   title: Do you need help with Grails?

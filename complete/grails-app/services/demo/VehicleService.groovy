@@ -1,7 +1,9 @@
 package demo
 
 import grails.transaction.Transactional
+import groovy.transform.CompileStatic
 
+@CompileStatic
 @Transactional
 class VehicleService {
 
@@ -10,9 +12,10 @@ class VehicleService {
     }
 
     @Transactional(readOnly = true)
-    List<Vehicle> listAll() {
-        // Vaadin requires it be declared to a variable first or it breaks
-        final List<Vehicle> vehicleList = Vehicle.list()
-        vehicleList // return
+    List<Vehicle> listAll(boolean lazyFetch = true) {
+        if ( !lazyFetch ) {
+            return Vehicle.list(fetch: [make: 'eager', model: 'eager', driver: 'eager'])
+        }
+        Vehicle.where { }.list()
     }
 }

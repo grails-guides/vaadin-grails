@@ -1,14 +1,14 @@
 package demo
 
 import grails.transaction.Transactional
+import groovy.transform.CompileStatic
 
+@CompileStatic
 @Transactional
 class DriverService {
 
     @Transactional(readOnly = true)
     List<Driver> listAll() {
-        // Vaadin requires it be declared to a variable first or it breaks
-        final List<Driver> driverList = Driver.list()
-        driverList // return
+        Driver.where { }.list()
     }
 }

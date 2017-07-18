@@ -12,7 +12,9 @@ import com.vaadin.ui.Label
 import com.vaadin.ui.Panel
 import com.vaadin.ui.UI
 import com.vaadin.ui.VerticalLayout
+import groovy.transform.CompileStatic
 
+@CompileStatic
 @SpringUI(path="/vaadinui")
 @Title("Vaadin Grails") //<1>
 @Theme("vaadin-grails-theme")
@@ -29,17 +31,15 @@ class VaadinGrailsUI extends UI implements ViewDisplay { //<3>
         springViewDisplay = new Panel()
         springViewDisplay.setSizeFull()
 
-        root.addComponent(this.buildHeader())
+        root.addComponent(buildHeader())
         root.addComponent(springViewDisplay)
         root.setExpandRatio(springViewDisplay, 1.0f)
     }
 
-
-    private Label buildHeader() { //<6>
+    static private Label buildHeader() { //<6>
         final Label mainTitle = new Label("Welcome to the Garage")
-        mainTitle // return
+        mainTitle
     }
-
 
     @Override
     void showView(final View view) { //<7>

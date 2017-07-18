@@ -9,9 +9,9 @@ import groovy.transform.ToString
 @ToString(includes=['name'], includeNames=true, includePackage=false)
 class Model {
 
-    /** Properties: */
     String name
 
     static constraints = {
+    	name nullable: false
     }
 }

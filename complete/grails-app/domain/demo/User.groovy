@@ -10,7 +10,6 @@ import grails.compiler.GrailsCompileStatic
 class User implements Serializable {
     private static final long serialVersionUID = 1
 
-    /** Properties: */
     String username
     String password
     boolean enabled = true

@@ -1,9 +1,9 @@
 package demo
 
-import grails.compiler.GrailsCompileStatic
 import grails.converters.JSON
+import groovy.transform.CompileStatic
 
-@GrailsCompileStatic
+@CompileStatic
 class GarageController {
 
     VehicleService vehicleService //<1>

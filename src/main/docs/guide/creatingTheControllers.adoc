@@ -3,19 +3,19 @@ between Grails controllers and the Vaadin Framework.
 
 [source,bash]
 ----
-  $ grails create-controller vaadin.GarageController
+  $ grails create-controller demo.GarageController
 ----
 
-Now let’s edit our controller under grails-app/controllers/vaadin/.
+Now let’s edit our controller under grails-app/controllers/demo/.
 We will import one of our services, update our index method, and add the following annotation.
 
-- @GrailsCompileStatic - increases application performance
+- `@GrailsCompileStatic` - Code that is marked with `GrailsCompileStatic` will all be statically compiled except for Grails specific interactions that cannot be statically compiled but that GrailsCompileStatic can identify as permissible for dynamic dispatch. These include things like invoking dynamic finders and DSL code in configuration blocks like constraints and mapping closures in domain classes.
 
 
 [source,groovy]
-./grails-app/controllers/vaadin/GarageController.groovy
+./grails-app/controllers/demo/GarageController.groovy
 ----
-include::{sourceDir}/grails-app/controllers/vaadin/GarageController.groovy[]
+include::{sourceDir}/grails-app/controllers/demo/GarageController.groovy[]
 ----
 
 <1> Declaring our service
