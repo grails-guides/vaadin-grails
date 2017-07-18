@@ -59,11 +59,9 @@ class GarageView extends VerticalLayout implements View { //<2>
         submitBtn.addClickListener         { event -> this.submit()}
 
         // Add data constructs to row
-        inputRow.addComponent(vehicleName)
-        inputRow.addComponent(vehicleMake)
-        inputRow.addComponent(vehicleModel)
-        inputRow.addComponent(vehicleDriver)
-        inputRow.addComponent(submitBtn)
+        [vehicleName, vehicleMake, vehicleModel, vehicleDriver, submitBtn].each {
+            inputRow.addComponent(it)
+        }
 
         /** Display Row Three: (Display all vehicles in database) --------------------------------------------------- */
         final HorizontalLayout dataDisplayRow = new HorizontalLayout()
