@@ -1,4 +1,4 @@
-package vaadin
+package demo
 
 import com.vaadin.navigator.View
 import com.vaadin.navigator.ViewChangeListener

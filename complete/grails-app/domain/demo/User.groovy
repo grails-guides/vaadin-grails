@@ -1,4 +1,4 @@
-package vaadin
+package demo
 
 import groovy.transform.EqualsAndHashCode
 import groovy.transform.ToString

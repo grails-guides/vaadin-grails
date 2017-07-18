@@ -1,4 +1,4 @@
-package vaadin
+package demo
 
 import grails.transaction.Transactional
 

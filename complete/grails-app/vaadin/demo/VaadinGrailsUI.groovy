@@ -1,4 +1,4 @@
-package vaadin
+package demo
 
 import com.vaadin.annotations.Title
 import com.vaadin.navigator.View
@@ -7,16 +7,11 @@ import com.vaadin.server.VaadinRequest
 import com.vaadin.annotations.Theme
 import com.vaadin.spring.annotation.SpringUI
 import com.vaadin.spring.annotation.SpringViewDisplay
-import com.vaadin.ui.Button
 import com.vaadin.ui.Component
 import com.vaadin.ui.Label
-import com.vaadin.ui.MenuBar
-import com.vaadin.ui.MenuBar.Command
-import com.vaadin.ui.MenuBar.MenuItem
 import com.vaadin.ui.Panel
 import com.vaadin.ui.UI
 import com.vaadin.ui.VerticalLayout
-import com.vaadin.ui.themes.ValoTheme
 
 @SpringUI(path="/vaadinui")
 @Title("Vaadin Grails") //<1>

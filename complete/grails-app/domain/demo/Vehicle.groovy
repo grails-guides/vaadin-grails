@@ -1,4 +1,4 @@
-package vaadin
+package demo
 
 import grails.compiler.GrailsCompileStatic
 import groovy.transform.EqualsAndHashCode

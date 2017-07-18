@@ -1,14 +1,14 @@
-package vaadin
+package demo
 
 import grails.transaction.Transactional
 
 @Transactional
-class ModelService {
+class MakeService {
 
     @Transactional(readOnly = true)
-    List<Model> listAll() {
+    List<Make> listAll() {
         // Vaadin requires it be declared to a variable first or it breaks
-        final List<Model> modelList = Model.list()
-        modelList // return
+        final List<Make> makeList = Make.list()
+        makeList // return
     }
 }
