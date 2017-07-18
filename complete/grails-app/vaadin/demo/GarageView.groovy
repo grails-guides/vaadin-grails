@@ -135,7 +135,7 @@ class GarageView extends VerticalLayout implements View { //<2>
         grid
     }
 
-    private Button buildSubmitButton() {
+    static private Button buildSubmitButton() {
         final Button submitBtn = new Button("Add to Garage")
         submitBtn.setStyleName("friendly")
 
