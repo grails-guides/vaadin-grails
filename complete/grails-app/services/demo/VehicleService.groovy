@@ -14,7 +14,11 @@ class VehicleService {
     @Transactional(readOnly = true)
     List<Vehicle> listAll(boolean lazyFetch = true) {
         if ( !lazyFetch ) {
-            return Vehicle.list(fetch: [make: 'eager', model: 'eager', driver: 'eager'])
+            return Vehicle.where {}
+                    .join('make')
+                    .join('model')
+                    .join('driver')
+                    .list()
         }
         Vehicle.where { }.list()
     }
