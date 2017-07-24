@@ -1,12 +1,9 @@
-There’s plenty of opportunities to expand the scope of this application. Here are a few ideas for
-improvements you can make on your own:
+There’s plenty of opportunities to expand the scope of this application. Here are a few ideas for improvements you can make on your own:
 
-- Create a modal dialog form to add new Drivers, Makes & Models. Use Vaadin's
-https://vaadin.com/docs/-/part/framework/layout/layout-sub-window.html[Sub-Windows] to give you a head start.
+- Create a modal dialog form to add new Drivers, Makes & Models. Use Vaadin's https://vaadin.com/docs/-/part/framework/layout/layout-sub-window.html[Sub-Windows] to give you a head start.
 
-- Add support for updates to existing Vehicles. A modal dialog might work well for this as well,
-or perhaps an editable table row
+- Add support for updates to existing Vehicles. A modal dialog might work well for this as well, or perhaps an editable table row
 
-- Currently Makes & Models are independent. Add an appropriate GORM association between Make &
-Model, and change the select lists to only display Models for the currently select Make. You will
-want to make use of the JavaScript Array.filter method.
+- Currently Makes & Models are independent. Add an appropriate GORM association between Make & Model, and change the select lists to only display Models for the currently select Make. You will want to make use of the JavaScript Array.filter method.
+
+- Currently, your views contain direct references to services. Although it's completely fine for a demo or a small application, things will tend to get out of hand when your codebase grows. It's a good idea to organize your code and Model-View-Presenter (MVP) is one of patterns that help with that. You can read more about patterns and Vaadin in https://vaadin.com/docs/-/part/framework/advanced/advanced-architecture.html[the Book of Vaadin
