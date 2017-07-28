@@ -29,6 +29,7 @@
 // For more information, see: https://vaadin.com/book/-/page/themes.valo.html
 // Example variants can be copy/pasted from https://vaadin.com/wiki/-/wiki/Main/Valo+Examples
 
+//tag::customCss[]
 @import "../valo/valo.scss";
 
 @mixin vaadin-grails-theme {
@@ -36,3 +37,4 @@
 
   // Insert your own theme rules here
 }
+//end::customCss[]

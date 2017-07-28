@@ -17,7 +17,9 @@ import groovy.transform.CompileStatic
 @CompileStatic
 @SpringUI(path="/vaadinui")
 @Title("Vaadin Grails") //<1>
+//tag::themeTag[]
 @Theme("vaadin-grails-theme")
+//end::themeTag[]
 @SpringViewDisplay //<2>
 class VaadinGrailsUI extends UI implements ViewDisplay { //<3>
     private Panel springViewDisplay //<4>
