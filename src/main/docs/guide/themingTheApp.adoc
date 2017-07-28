@@ -10,7 +10,7 @@ called vaadin-grails-theme. You can see that we are using this theme in our `Vaa
 [source,groovy]
 ./grails-app/vaadin/demo/VaadinGrailsUI.groovy
 ----
-include::{sourceDir}/grails-app/vaadin/demo/VaadinGrailsUI.groovy[indent=0,lines="23..23"]
+include::{sourceDir}/grails-app/vaadin/demo/VaadinGrailsUI.groovy[indent=0,tag=themeTag]
 ----
 
 Vaadin themes are SASS based and have multiple ways in which they can be compiled. Since Vaadin themes
@@ -29,7 +29,7 @@ To add custom styles then we look to add them in `vaadin-grails-theme.scss`
 [source,css]
 ./src/main/webapp/VAADIN/themes/vaadin-grails-theme/vaadin-grails-theme.scss
 ----
-include::{sourceDir}/src/main/webapp/VAADIN/themes/vaadin-grails-theme/vaadin-grails-theme.scss[indent=0,lines="32..38"]
+include::{sourceDir}/src/main/webapp/VAADIN/themes/vaadin-grails-theme/vaadin-grails-theme.scss[indent=0,tag=customCss]
 ----
 
 Add your rules under `Insert your own theme rules here`.
