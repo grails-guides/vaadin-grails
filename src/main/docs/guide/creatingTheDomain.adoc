@@ -35,7 +35,7 @@ include::{sourceDir}/grails-app/domain/demo/Vehicle.groovy[]
 ----
 
 There is a bit more to our `Driver.groovy` than meets the eye versus the first 3 classes. That's
-because we are actually extending our `User.groovy class with driver. This will grant us
+because we are actually extending our `User.groovy` class with driver. This will grant us
 some extra flexibility in the future as we grow our application.
 [source,groovy]
 ./grails-app/domain/demo/Driver.groovy

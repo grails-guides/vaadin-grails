@@ -12,7 +12,7 @@ resources.
 Now let’s edit our service classes under grails-app/services/demo/.
 We’ll add a `listAll()` method to all of the classes. This method will have the following additional annotation.
 
-- `@Transactional(readOnly = true)` - good practice to have on methods that only return data
+- `@ReadOnly` - good practice to have on methods that only return data
 
 [source,groovy]
 ./grails-app/services/demo/DriverService.groovy

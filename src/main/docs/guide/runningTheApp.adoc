@@ -21,6 +21,6 @@ which will be running on `http://localhost:8080`
 
 image::grailsDefault.png[]
 
-To see Vaadin in action navigate to `http://localhost:8080/vaadinui` instead.
+To see Vaadin in action navigate to `http://localhost:8080/vaadinUI` instead.
 
 image::vaadinDefault.png[]

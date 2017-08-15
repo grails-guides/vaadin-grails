@@ -15,11 +15,10 @@ import com.vaadin.ui.VerticalLayout
 import groovy.transform.CompileStatic
 
 @CompileStatic
-@SpringUI(path="/vaadinui")
+@SpringUI(path="/vaadinUI")
 @Title("Vaadin Grails") //<1>
-@Theme("vaadin-grails-theme")
 @SpringViewDisplay //<2>
-class VaadinGrailsUI extends UI implements ViewDisplay { //<3>
+class DemoGrailsUI extends UI implements ViewDisplay { //<3>
     private Panel springViewDisplay //<4>
 
     /** Where a line is matters, it can change the position of an element. */

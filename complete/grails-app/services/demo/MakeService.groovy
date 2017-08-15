@@ -1,13 +1,12 @@
 package demo
 
-import grails.transaction.Transactional
+import grails.gorm.transactions.ReadOnly
 import groovy.transform.CompileStatic
 
 @CompileStatic
-@Transactional
 class MakeService {
 
-    @Transactional(readOnly = true)
+    @ReadOnly
     List<Make> listAll() {
         Make.where { }.list()
     }

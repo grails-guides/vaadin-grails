@@ -5,12 +5,12 @@ WARNING: `VAADIN/themes` is a fixed location. If your theme files are not placed
 available.
 
 If using our app or if you generated your own using the profile, the vaadin profile will create a new theme for you
-called vaadin-grails-theme. You can see that we are using this theme in our `VaadinGrailsUI.groovy`
+called vaadin-grails-theme. You can see that we are using this theme in our `DemoGrailsUI.groovy`
 
 [source,groovy]
-./grails-app/vaadin/demo/VaadinGrailsUI.groovy
+.src/main/groovy/demo/DemoGrailsUI.groovy
 ----
-include::{sourceDir}/grails-app/vaadin/demo/VaadinGrailsUI.groovy[indent=0,lines="23..23"]
+include::{sourceDir}/src/main/groovy/demo/DemoGrailsUI.groovy[indent=0,lines="23..23"]
 ----
 
 Vaadin themes are SASS based and have multiple ways in which they can be compiled. Since Vaadin themes

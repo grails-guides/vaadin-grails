@@ -1,13 +1,13 @@
 package demo
 
-import grails.transaction.Transactional
+import grails.gorm.transactions.ReadOnly
 import groovy.transform.CompileStatic
 
 @CompileStatic
-@Transactional
+@ReadOnly
 class DriverService {
 
-    @Transactional(readOnly = true)
+    @ReadOnly
     List<Driver> listAll() {
         Driver.where { }.list()
     }

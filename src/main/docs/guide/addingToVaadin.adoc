@@ -1,11 +1,11 @@
 Finally time to start adding Vaadin code to our application!
 
-Consider `grails-app/vaadin/demo/VaadinGrailsUI.groovy` to be your Vaadin
+Consider `src/main/groovy/demo/DemoGrailsUI.groovy` to be your Vaadin
 controller / dispatcher as it will help you understand the Vaadin flow. Our `init()`
 method is the applications entry point to Vaadin itself, this is your top level view
 essentially. From here you can setup navigation and other whole app view components.
 
-Our `VaadinGrailsUI.groovy` as it currently is, is great for a
+Our `DemoGrailsUI.groovy` as it currently is, is great for a
 single page web application but its not the most flexible if we want to add navigation
 components or other pages later on. With this in mind we are going to make it a bit more
 flexible using views. Using views is also beneficial in helping keep our Vaadin frontend
@@ -15,9 +15,9 @@ NOTE: For more information on views and navigation with Vaadin look
 https://vaadin.github.io/spring-tutorial/#_views_and_navigation_with_vaadin_spring[here].
 
 [source,groovy]
-./grails-app/vaadin/demo/VaadinGrailsUI.groovy
+.src/main/groovy/demo/DemoGrailsUI.groovy
 ----
-include::{sourceDir}/grails-app/vaadin/demo/VaadinGrailsUI.groovy[]
+include::{sourceDir}/src/main/groovy/demo/DemoGrailsUI.groovy[]
 ----
 
 <1> We add the `@Title` annotation to give our window / tab a nice name

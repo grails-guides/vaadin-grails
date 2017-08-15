@@ -1,13 +1,12 @@
 package demo
 
-import grails.transaction.Transactional
+import grails.gorm.transactions.ReadOnly
 import groovy.transform.CompileStatic
 
 @CompileStatic
-@Transactional
 class ModelService {
 
-    @Transactional(readOnly = true)
+    @ReadOnly
     List<Model> listAll() {
         Model.where { }.list()
     }

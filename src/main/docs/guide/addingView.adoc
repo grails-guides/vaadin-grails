@@ -1,12 +1,12 @@
 Now to add the view which is the bulk of our Vaadin code. Create a new file located in
-`grails-app/vaadin/demo` called `GarageView.groovy`.
+`src/main/groovy/demo` called `GarageView.groovy`.
 
 Next make the necessary updates.
 
 [source,groovy]
-./grails-app/vaadin/demo/GarageView.groovy
+.src/main/groovy/demo/GarageView.groovy
 ----
-include::{sourceDir}/grails-app/vaadin/demo/GarageView.groovy[]
+include::{sourceDir}/src/main/groovy/demo/GarageView.groovy[]
 ----
 
 <1> Add `@SpringView` annotation and set the name so that your view can be found.
@@ -48,18 +48,18 @@ we add listeners to our components making use of groovy closures to specify what
 when an event occurs. In our case we are `updateVehicle()` which we then `submit()`
 
 [source,groovy]
-./grails-app/vaadin/demo/GarageView.groovy
+.src/main/groovy/demo/GarageView.groovy
 ----
-include::{sourceDir}/grails-app/vaadin/demo/GarageView.groovy[indent=0, tag=listeners]
+include::{sourceDir}/src/main/groovy/demo/GarageView.groovy[indent=0, tag=listeners]
 ----
 
 Using the listeners we build the vehicle object which is then submitted when the button is clicked.
 The last line of our submit method reloads our view to refresh the newly updated data.
 
 [source,groovy]
-./grails-app/vaadin/demo/GarageView.groovy
+.src/main/groovy/demo/GarageView.groovy
 ----
-include::{sourceDir}/grails-app/vaadin/demo/GarageView.groovy[indent=0, tag=navigateTo]
+include::{sourceDir}/src/main/groovy/demo/GarageView.groovy[indent=0, tag=navigateTo]
 ----
 
 Now that everything is in place return to <<runningTheApp>> to run your app. If everything is as

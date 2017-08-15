@@ -1,17 +1,17 @@
 package demo
 
-import grails.transaction.Transactional
+import grails.gorm.transactions.ReadOnly
 import groovy.transform.CompileStatic
 
 @CompileStatic
-@Transactional
+@ReadOnly
 class VehicleService {
 
     def save(final Vehicle vehicle) {
         vehicle.save(failOnError: true)
     }
 
-    @Transactional(readOnly = true)
+    @ReadOnly
     List<Vehicle> listAll(boolean lazyFetch = true) {
         if ( !lazyFetch ) {
             return Vehicle.where {}

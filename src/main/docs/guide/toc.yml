@@ -1,3 +1,5 @@
+training:
+  title: Grails Training
 gettingStarted:
   title: Getting Started
   requirements: What you will need
@@ -15,8 +17,6 @@ writingTheApp:
   creatingTheControllers: Creating a controller
   addingToVaadin: Vaadin
   addingView: Adding your view
-themingTheApp:
-  title: Theming the Application
 nextSteps:
   title: Next Steps
 helpWithGrails:

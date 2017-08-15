@@ -45,7 +45,7 @@ class GarageView extends VerticalLayout implements View { //<2>
 
     @PostConstruct //<5>
     void init() {
-        /** Display Row One: (Add panel title) ---------------------------------------------------------------------- */
+        /** Display Row One: (Add panel title) */
         final HorizontalLayout titleRow = new HorizontalLayout()
         titleRow.setWidth("100%")
         addComponent(titleRow)
@@ -54,7 +54,7 @@ class GarageView extends VerticalLayout implements View { //<2>
         titleRow.addComponent(title)
         titleRow.setExpandRatio(title, 1.0f) // Expand
 
-        /** Display Row Two: (Build data input) --------------------------------------------------------------------- */
+        /** Display Row Two: (Build data input) */
         final HorizontalLayout inputRow = new HorizontalLayout()
         inputRow.setWidth("100%")
         addComponent(inputRow)
@@ -82,7 +82,7 @@ class GarageView extends VerticalLayout implements View { //<2>
             inputRow.addComponent(it)
         }
 
-        /** Display Row Three: (Display all vehicles in database) --------------------------------------------------- */
+        /** Display Row Three: (Display all vehicles in database) */
         final HorizontalLayout dataDisplayRow = new HorizontalLayout()
         dataDisplayRow.setWidth("100%")
         addComponent(dataDisplayRow)
