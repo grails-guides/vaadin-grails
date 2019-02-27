@@ -16,7 +16,7 @@ public class DemoGrailsUI extends UI{
         root.setSizeFull()
 
         Button button = new Button("Click me!", {
-            Notification.show("Hello from Vaadin 8 + Grails 3!", Notification.Type.ERROR_MESSAGE)
+            Notification.show("Hello from Vaadin 8 + Grails!", Notification.Type.ERROR_MESSAGE)
         } as Button.ClickListener)
         root.addComponent(button)
 
