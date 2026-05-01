@@ -1,7 +1,0 @@
-Now that our domain is in place, lets preload some data to work with.
-
-[source,groovy]
-.grails-app/init/demo/BootStrap.groovy
-----
-include::{sourceDir}/grails-app/init/demo/BootStrap.groovy[]
-----
